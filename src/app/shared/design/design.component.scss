@@ -1,0 +1,16 @@
+ul {
+  display: grid;
+  grid-template-columns: repeat(10, 20px);
+  grid-template-rows: repeat(10, 20px);
+  place-items: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+
+  li {
+    min-width: 4px;
+    min-height: 4px;
+    border-radius: 50%;
+    background-color: var(--greenShadow);
+  }
+}

@@ -1,0 +1,59 @@
+.about__box {
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  .about__me-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    border-left: 1px solid #ffffff6c;
+    padding-left: 2em;
+    font-weight: 300;
+    position: relative;
+    margin-left: 10px;
+
+    .origin__box,
+    .advantages__box,
+    .objetive__box {
+      h3 {
+        &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: var(--black);
+          border: 2px solid var(--white);
+          position: absolute;
+          left: -6px;
+        }
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 0.7cm;
+      }
+    }
+
+    .advantages__box {
+      li {
+        &::before {
+          content: ">";
+          margin-right: 5px;
+          color: rgba(255, 255, 255, 0.386);
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}

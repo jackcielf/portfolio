@@ -1,0 +1,83 @@
+<div class="back_ground">
+  <main class="container">
+    <section class="home__container">
+      <div class="home__box">
+        <p class="hello">Hi, my name is</p>
+        <div>
+          <span #containerName class="name"></span>
+        </div>
+        <p class="profission">Frontend Developer</p>
+        <p class="text">
+          I enjoy working on the front-end, creating interactive products with
+          great user experiences.
+        </p>
+        <div routerLink="/about" class="button_go">
+          <a class="see__more">See more</a>
+          <div class="icon__arrow"></div>
+        </div>
+
+        <app-social-networks></app-social-networks>
+      </div>
+
+      <div class="img__box">
+        <div class="img__card">
+          <div class="img"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <app-design
+    [width]="'150px'"
+    [height]="'150px'"
+    [border]="'3px solid rgba(202, 242, 129, 0.4)'"
+    [radius]="'50%'"
+    [top]="'2vh'"
+    [left]="'-3vw'"
+    [backgroundColorItem]="'transparent'"
+  ></app-design>
+  <app-design
+    [top]="'10vh'"
+    [right]="'30vw'"
+    [backgroundColorItem]="'rgba(202, 242, 129, 0.4)'"
+  ></app-design>
+  <app-design
+    [bottom]="'-15vh'"
+    [right]="'0vw'"
+    [borderItem]="'1px solid rgba(202, 242, 129, 0.5)'"
+    [backgroundColorItem]="'transparent'"
+  ></app-design>
+  <app-design
+    [width]="'50px'"
+    [height]="'50px'"
+    [border]="'2px solid rgba(73, 49, 212, 0.8)'"
+    [radius]="'50%'"
+    [top]="'13vh'"
+    [right]="'0vw'"
+    [backgroundColorItem]="'transparent'"
+  ></app-design>
+  <app-design
+    [width]="'100px'"
+    [height]="'100px'"
+    [border]="'2px solid rgba(73, 49, 212, 0.8)'"
+    [radius]="'50%'"
+    [top]="'40vh'"
+    [right]="'10vw'"
+    [backgroundColorItem]="'transparent'"
+  ></app-design>
+  <app-design
+    [width]="'100px'"
+    [height]="'100px'"
+    [bottom]="'15vh'"
+    [left]="'40vw'"
+    [borderItem]="'1px solid rgba(202, 242, 129, 0.5)'"
+    [backgroundColorItem]="'transparent'"
+  ></app-design>
+  <app-design
+    [width]="'140px'"
+    [height]="'60px'"
+    [bottom]="'18vh'"
+    [left]="'10vw'"
+    [backgroundColorItem]="'rgba(202, 242, 129, 0.4)'"
+  ></app-design>
+</div>

@@ -1,0 +1,85 @@
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .home__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1em;
+    font-size: 1.1em;
+
+    .hello {
+      color: var(--white);
+      margin-bottom: -1em;
+    }
+
+    .name {
+      font-size: 4em;
+      font-weight: 700;
+      color: var(--green);
+      border-right: 7px solid var(--white);
+      padding-right: 10px;
+      animation: blink 1s linear infinite;
+      animation-delay: 3.5s;
+    }
+
+    @keyframes blink {
+      0% {
+        border-right: none;
+        border-right-width: 7px;
+      }
+      100% {
+        border-right-color: var(--white);
+      }
+    }
+
+    .profission {
+      color: var(--white);
+      margin-top: -1em;
+      font-weight: 500;
+      letter-spacing: 0.07cm;
+      text-transform: uppercase;
+      text-decoration: underline wavy var(--green);
+    }
+
+    .text {
+      max-width: 500px;
+      color: var(--white);
+      line-height: 25px;
+    }
+
+    .button_go {
+      font-weight: 700;
+    }
+  }
+
+  // CONTAINER WITH IMAGE
+  .img__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .img__card {
+      .img {
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-image: url(https://img.freepik.com/fotos-gratis/empresario-confiante-assistindo-o-por-do-sol-da-cidade-atraves-da-janela-gerada-pela-ia_188544-36518.jpg);
+        box-shadow: 13px 13px 0 rgba(225, 225, 225, 0.1);
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}

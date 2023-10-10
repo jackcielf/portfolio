@@ -1,0 +1,52 @@
+.skills__box {
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .skills__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 2em;
+    gap: 1.5em;
+
+    .card__skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px var(--blackShadow);
+        font-weight: 600;
+      }
+
+      img {
+        width: 70px;
+        margin: 7px 0;
+        filter: drop-shadow(0 0 5px var(--whiteShadow));
+
+        &:hover {
+          transition: 0.3s;
+          transform: scale(1.1);
+        }
+      }
+
+      p {
+        text-transform: capitalize;
+        font-size: 0.8em;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1300px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}

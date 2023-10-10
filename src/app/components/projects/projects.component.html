@@ -1,0 +1,34 @@
+<div class="back_ground">
+  <div class="container">
+    <div class="overback"></div>
+
+    <section class="projects__box">
+      <h2>Projects.</h2>
+      <p>
+        Get in touch or shoot me an email directly on:
+        <a href="{{ linkGmail }}">{{ linkGmail }}</a>
+      </p>
+
+      <div class="my__projects">
+        <div *ngFor="let mydata of myDataProjects">
+          <div class="card">
+            <div class="overlay-card">
+              <h2>{{ mydata.name }}</h2>
+              <p class="description">{{ mydata.description }}</p>
+              <span class="linguages">{{ mydata.topics }}</span>
+              <div>
+                <a class="a1" href="{{ mydata.homepage }}" target="_blank">
+                  View project
+                </a>
+                <a class="a2" href="{{ mydata.html_url }}" target="_blank">
+                  View code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-footer route="home"></app-footer>
+    </section>
+  </div>
+</div>

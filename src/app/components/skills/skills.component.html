@@ -1,0 +1,110 @@
+<div class="back_ground">
+  <div class="container">
+    <section class="skills__box">
+      <h2>Skills</h2>
+      <p>
+        Currently, I have a lot of knowledge in
+        <strong>HTML, CSS, JS</strong> and a basic understanding of the
+        <strong>Angular framework</strong>, in addition to that I also have the
+        ability to use the Gimp tool for image editing. But, if you read the
+        section about me, you must be wondering why make the portfolio in
+        English if you are Brazilian, speak Portuguese, so I did it, not only
+        because I like the language, but also because I have a huge desire to
+        working outside Brazil, going beyond borders and having a good knowledge
+        of this language.
+      </p>
+
+      <div class="skills__container">
+        <div class="card__skill html">
+          <span>Html</span>
+          <img [src]="faHtml" />
+          <p>{{ levelHtml }}</p>
+        </div>
+        <div class="card__skill css">
+          <span>Css</span>
+          <img [src]="faCss" />
+          <p>{{ levelCss }}</p>
+        </div>
+        <div class="card__skill js">
+          <span>JavaScript</span>
+          <img [src]="faJavaScript" />
+          <p>{{ levelJS }}</p>
+        </div>
+        <div class="card__skill angular">
+          <span>Angular</span>
+          <img [src]="faAngular" />
+          <p>{{ levelAngular }}</p>
+        </div>
+        <div class="card__skill react">
+          <span>React</span>
+          <img [src]="faReact" />
+          <p>{{ levelReact }}</p>
+        </div>
+        <div class="card__skill node">
+          <span>NodeJS</span>
+          <img [src]="faNode" />
+          <p>{{ levelNodeJs }}</p>
+        </div>
+        <div class="card__skill java">
+          <span>Java</span>
+          <img [src]="faJava" />
+          <p>{{ levelJava }}</p>
+        </div>
+        <div class="card__skill php">
+          <span>Php</span>
+          <img [src]="faPhp" />
+          <p>{{ levelPhp }}</p>
+        </div>
+        <div class="card__skill python">
+          <span>Python</span>
+          <img [src]="faPython" />
+          <p>{{ levelPython }}</p>
+        </div>
+        <div class="card__skill mysql">
+          <span>MySql</span>
+          <img [src]="faMySql" />
+          <p>{{ levelMySql }}</p>
+        </div>
+        <div class="card__skill mongo">
+          <span>MongoDB</span>
+          <img [src]="faMongoDb" />
+          <p>{{ levelMongoDb }}</p>
+        </div>
+        <div class="card__skill ts">
+          <span>TypeScript</span>
+          <img [src]="faTs" />
+          <p>{{ levelTs }}</p>
+        </div>
+        <div class="card__skill git">
+          <span>Git</span>
+          <img [src]="faGit" />
+          <p>{{ levelGit }}</p>
+        </div>
+        <div class="card__skill bootstrap">
+          <span>BootStrap</span>
+          <img [src]="faBootstrap" />
+          <p>{{ levelBootstrap }}</p>
+        </div>
+        <div class="card__skill figma">
+          <span>Figma</span>
+          <img [src]="faFigma" />
+          <p>{{ levelFigma }}</p>
+        </div>
+      </div>
+
+      <app-footer route="home"></app-footer>
+    </section>
+
+    <!-- ELEMENTS THE DESIGN  -->
+    <app-design
+      [width]="'150px'"
+      [height]="'150px'"
+      [border]="'1px solid var(--greenShadow)'"
+      [radius]="'50%'"
+      [bottom]="'3vh'"
+      [zindex]="'1'"
+      [left]="'-3vw'"
+      [backgroundColorItem]="'transparent'"
+    ></app-design>
+  </div>
+</div>
