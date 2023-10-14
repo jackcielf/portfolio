@@ -9,9 +9,11 @@
   a {
     font-size: 1.5em;
     color: var(--whiteShadow);
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+
 
     &:hover {
-      transition: 0.3s ease-in-out;
       color: var(--white);
       filter: drop-shadow(10px -10px 0px #ffffff36);
     }

@@ -14,6 +14,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { DesignComponent } from './shared/design/design.component';
 import { SocialNetworksComponent } from './shared/social-networks/social-networks.component';
+import { TrailAnimationComponent } from './shared/trail-animation/trail-animation.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SocialNetworksComponent } from './shared/social-networks/social-network
     ProjectsComponent,
     SkillsComponent,
     DesignComponent,
-    SocialNetworksComponent
+    SocialNetworksComponent,
+    TrailAnimationComponent
   ],
   imports: [
     BrowserModule,
