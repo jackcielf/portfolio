@@ -27,10 +27,11 @@
     @keyframes blink {
       0% {
         border-right: none;
+        border-right-color: var(--green);
         border-right-width: 7px;
       }
       100% {
-        border-right-color: var(--white);
+        border-right-color: var(--green);
       }
     }
 

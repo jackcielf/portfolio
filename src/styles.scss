@@ -13,14 +13,20 @@
   --blackShadow: #141414bb;
   --green: #cbf281;
   --greenShadow: #caf281bc;
+  --dark-green: #caf28166;
   --white: #e1e1e1;
   --whiteShadow: #b9b8b8c8;
   --whiteHover: #d6d5d5;
+  --blue: #4931d4cc;
 }
 
-strong:hover {
+strong {
+  transition: .3s;
   font-style: italic;
-  text-shadow: 0 0 5px var(--greenShadow);
+
+  &:hover {
+    text-shadow: 0 0 5px var(--greenShadow);
+  }
 }
 
 li {

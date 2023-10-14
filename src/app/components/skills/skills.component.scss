@@ -25,14 +25,18 @@
         width: 70px;
         margin: 7px 0;
         filter: drop-shadow(0 0 5px var(--whiteShadow));
-
+        padding-bottom: 20px;
+        transition: 0.3s;
+        
         &:hover {
-          transition: 0.3s;
-          transform: scale(1.1);
+          box-shadow: 0 3px 0 #cbf281;
+          filter: drop-shadow(0 0 20px var(--whiteShadow));
         }
       }
 
       p {
+        position: relative;
+        top: -25px;
         text-transform: capitalize;
         font-size: 0.8em;
         font-weight: 300;

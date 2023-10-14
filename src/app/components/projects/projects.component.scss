@@ -31,19 +31,19 @@
       border-radius: 10px;
       display: flex;
       align-items: flex-end;
-
+      
       &:hover {
         .overlay-card {
           opacity: 1 !important;
-          transition: 0.3s !important;
           transform: translateY(0);
         }
       }
-
+      
       .overlay-card {
         width: 100%;
         row-gap: 0.8em;
         display: flex;
+        transition: 0.2s ease-in-out !important;
         flex-direction: column;
         justify-content: space-around;
         background: linear-gradient(to top, #000, transparent);
