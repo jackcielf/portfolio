@@ -177,30 +177,3 @@ h3 {
 .skills__box::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
 }
-
-// /* ANIMATIONS */
-// [item-animation] {
-//   opacity: 0;
-//   transition: 1s;
-// }
-
-// [item-animation="top"] {
-//   transform: translate3d(0, 300px, 0);
-// }
-
-// [item-animation="down"] {
-//   transform: translate3d(0, -300px, 0);
-// }
-
-// [item-animation="right"] {
-//   transform: translate3d(300px, 0, 0);
-// }
-
-// [item-animation="left"] {
-//   transform: translate3d(-300px, 0, 0);
-// }
-
-// [item-animation].animate {
-//   transform: translate3d(0, 0, 0);
-//   opacity: 1;
-// }

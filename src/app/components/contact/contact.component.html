@@ -1,8 +1,8 @@
 <div class="back_ground">
   <div class="container">
-    <section class="contact__box">
+    <section class="contact__box" [@fadeAnimation]>
       <h2>Contact.</h2>
-      <p>
+      <p class="item-anime">
         Get in touch or shoot me an email directly on
         <strong>{{myEmail}}</strong>
       </p>
@@ -16,7 +16,7 @@
             [value]="afterSubmitRedirecTo"
           />
           <input
-            class="input"
+            class="input item-anime"
             type="text"
             name="name"
             id="name"
@@ -25,7 +25,7 @@
             minlength="2"
           />
           <input
-            class="input"
+            class="input item-anime"
             type="email"
             name="email"
             id="email"
@@ -35,14 +35,14 @@
             maxlength="50"
           />
           <textarea
-            class="input"
+            class="input item-anime"
             type="text"
             name="message"
             id="message"
             placeholder="Message"
             minlength="2"
           ></textarea>
-          <input class="submit" type="submit" value="Send Message" />
+          <input class="submit item-anime" type="submit" value="Send Message" />
         </form>
       </div>
 

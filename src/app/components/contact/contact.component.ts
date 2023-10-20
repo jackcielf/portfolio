@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { fadeAnimation } from 'src/app/shared/animations/animationInput';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  animations: [fadeAnimation]
 })
 export class ContactComponent implements OnInit {
   apiUrl = 'https://api.staticforms.xyz/submit';

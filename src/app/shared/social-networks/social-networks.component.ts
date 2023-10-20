@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { fadeAnimation } from "../animations/animationInput";
 
 @Component({
   selector: 'app-social-networks',
   templateUrl: './social-networks.component.html',
-  styleUrls: ['./social-networks.component.scss']
+  styleUrls: ['./social-networks.component.scss'],
+  animations: [fadeAnimation],
 })
 export class SocialNetworksComponent implements OnInit {
   linkInsta = 'https://www.instagram.com/dev_jakkifx/';
@@ -13,7 +15,5 @@ export class SocialNetworksComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }

@@ -5,11 +5,13 @@ import {
   ElementRef,
   ViewChild,
 } from "@angular/core";
+import { fadeAnimation } from "../../shared/animations/animationInput";
 
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.scss"],
+  animations: [fadeAnimation],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   // Animação de letras aparecendo
@@ -24,7 +26,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   // Executado quando a página é carregada
   ngAfterViewInit(): any {
     this.showText(this.el.nativeElement, this.text, this.interval);
-    this.inputAnimationElements();
   }
 
   showText(el: any, text: string, interval: number): any {
@@ -38,12 +39,5 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
       el.innerHTML += next;
     }, interval);
-  }
-
-  inputAnimationElements(): void {
-    const el = document.querySelectorAll("[item-animation]");
-    const animation = "animate";
-
-    const windowTop = window.scrollY + (window.innerHeight * 3) / 3;
   }
 }
