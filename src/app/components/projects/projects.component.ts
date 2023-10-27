@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from "@angular/core";
 import { GithubService } from "src/app/github.service";
+import ProjectsIMG from "../../projects-img.json";
 
 @Component({
   selector: "app-projects",
@@ -13,9 +14,11 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   deleteProjects = [
     "game-snake-desktop",
     "game-snake-mobile",
-    "portfolio-v3",
+    "portfolio",
     "projects-web",
   ];
+
+  imageProjects = ProjectsIMG;
 
   nickname = "jakkifx";
   currentPage = 1;
@@ -29,7 +32,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         this.myData = item;
 
         this.filterProjects();
-        // this.addImage();
       });
   }
 
@@ -56,7 +58,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
 
   // Percorre o array com todos os repositórios e pega somente aqueles que contém URL para visualização do projeto
   filterProjects(): void {
-    // Percorrer o array de objetos
     for (const data of this.myData) {
       if (data.homepage) {
         // Verificar se o valor de 'data.name' do objeto está na lista de elementos
@@ -66,17 +67,4 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       }
     }
   }
-
-  // addImage(): void {
-  //   this.myDataProjects.forEach((obj, index) => {
-  //   const newParam = this.imgProjects[index];
-  //   for (const key in newParam) {
-  //     if (newParam.hasOwnProperty(key)) {
-  //       obj[key] = newParam[key];
-  //     }
-  //   }
-  // });
-
-  // console.log(this.myDataProjects);
-  // }
 }

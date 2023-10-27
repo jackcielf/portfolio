@@ -12,6 +12,7 @@
       <div class="my__projects">
         <div *ngFor="let mydata of myDataProjects">
           <div class="card">
+            <img *ngFor="let img of imageProjects" src="" alt="">
             <div class="overlay-card">
               <h2>{{ mydata.name }}</h2>
               <p class="description">{{ mydata.description }}</p>
