@@ -1,7 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
-import { LocationStrategy, HashLocationStrategy } from "@angular/common";
 import { AppRoutingModule } from "./app-routing.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
@@ -37,7 +36,7 @@ import { TrailAnimationComponent } from "./shared/trail-animation/trail-animatio
     HttpClientModule,
     BrowserAnimationsModule,
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

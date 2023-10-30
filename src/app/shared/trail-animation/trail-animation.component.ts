@@ -14,7 +14,7 @@ import {
 export class TrailAnimationComponent implements OnInit {
   @ViewChild("canvas", { static: true }) canvas: ElementRef<HTMLCanvasElement>;
   ctx: CanvasRenderingContext2D;
-  mouseMoved: boolean = false;
+  mouseMoved = false;
   pointer = {
     x: 0.5 * window.innerWidth,
     y: 0.5 * window.innerHeight,

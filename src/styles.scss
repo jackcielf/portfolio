@@ -147,6 +147,10 @@ h3 {
 .skills__box {
   scrollbar-width: thin; /* Largura fina da scrollbar NO FIREFOX */
   scrollbar-color: transparent transparent; /* Esconder a scrollbar NO FIREFOX */
+
+  h2 {
+    margin-bottom: 10px;
+  }
 }
 
 .projects__box::-webkit-scrollbar,
@@ -176,4 +180,10 @@ h3 {
 .contact__box::-webkit-scrollbar-thumb:hover,
 .skills__box::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 2em;
+  }
 }

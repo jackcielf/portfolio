@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   logoName = 'Jakki';
+  menuShow = false;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+  fnShowMenu(): void {
+    console.log('okokok')
+    this.menuShow = !this.menuShow;
+  }
 }

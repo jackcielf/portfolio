@@ -14,3 +14,9 @@ ul {
     background-color: var(--greenShadow);
   }
 }
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+}

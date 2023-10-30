@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, OnInit } from "@angular/core";
 import { GithubService } from "src/app/github.service";
-import ProjectsIMG from "../../projects-img.json";
 
 @Component({
   selector: "app-projects",
@@ -15,10 +14,8 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     "game-snake-desktop",
     "game-snake-mobile",
     "portfolio",
-    "projects-web",
+    "projects-web"
   ];
-
-  imageProjects = ProjectsIMG;
 
   nickname = "jakkifx";
   currentPage = 1;

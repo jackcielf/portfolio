@@ -1,8 +1,4 @@
 .skills__box {
-  h2 {
-    margin-bottom: 10px;
-  }
-
   .skills__container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -43,14 +39,4 @@
       }
     }
   }
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 1300px) {
-}
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 576px) {
 }

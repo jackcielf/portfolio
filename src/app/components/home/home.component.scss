@@ -9,6 +9,10 @@
     row-gap: 1em;
     font-size: 1.1em;
 
+    .img {
+      display: none;
+    }
+
     .hello {
       color: var(--white);
       margin-bottom: -1em;
@@ -56,7 +60,6 @@
     }
   }
 
-  // CONTAINER WITH IMAGE
   .img__box {
     display: flex;
     align-items: center;
@@ -76,12 +79,39 @@
   }
 }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 992px) {
-}
-
 @media screen and (max-width: 768px) {
-}
+  .home__container {
+    display: block;
 
-@media screen and (max-width: 576px) {
+    .home__box {
+      width: 100%;
+      row-gap: 1em;
+      font-size: 1em;
+
+      .img {
+        display: block;
+        width: 300px;
+        min-height: 300px;
+        margin: -2em auto 0 auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-image: url(https://img.freepik.com/fotos-gratis/papel-de-parede-padrao-de-fundo-abstrato-grunge-preto-com-foto-gratis_1340-33834.jpg);
+        box-shadow: none;
+      }
+
+      .hello {
+        color: var(--white);
+        margin-top: 2em;
+      }
+
+      .name {
+        font-size: 3em;
+      }
+    }
+
+    .img__box {
+      display: none;
+    }
+  }
 }
