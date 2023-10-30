@@ -21,7 +21,7 @@
 }
 
 strong {
-  transition: .3s;
+  transition: 0.3s;
   font-style: italic;
 
   &:hover {
@@ -81,6 +81,29 @@ h3 {
   overflow: hidden scroll;
   height: 100vh;
   padding-top: 12em;
+  scrollbar-width: thin; /* Largura fina da scrollbar NO FIREFOX */
+  scrollbar-color: transparent transparent; /* Esconder a scrollbar NO FIREFOX */
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 }
 
 // ANIMAÇÃO DE SETA PARA DIREITA
@@ -91,40 +114,34 @@ h3 {
   column-gap: 0.5em;
   cursor: pointer;
 
-  a {
-    text-transform: capitalize;
-  }
-
   .icon__arrow {
     width: 27px;
     border: 1px solid var(--white);
+    background-color: var(--white);
     position: relative;
     border-radius: 0 4px 4px 0;
     animation: anima 1s ease-in-out infinite;
-  }
 
-  .icon__arrow::after {
-    content: "";
-    width: 10px;
-    border: 1px solid var(--white);
-    background-color: var(--white);
-    position: absolute;
-    top: -4.5px;
-    right: -2.5px;
-    border-radius: 5px;
-    transform: rotate(45deg);
-  }
+    &::after,
+    &::before {
+      content: "";
+      width: 10px;
+      border: 1px solid var(--white);
+      background-color: var(--white);
+      position: absolute;
+      right: -2.5px;
+      border-radius: 5px;
+    }
 
-  .icon__arrow::before {
-    content: "";
-    width: 10px;
-    border: 1px solid var(--white);
-    background-color: var(--white);
-    position: absolute;
-    top: 3px;
-    right: -2.5px;
-    border-radius: 5px;
-    transform: rotate(-45deg);
+    &::after {
+      top: -4.5px;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      top: 3px;
+      transform: rotate(-45deg);
+    }
   }
 
   @keyframes anima {
@@ -140,50 +157,8 @@ h3 {
   }
 }
 
-// REMOVENDO A BARRA DE SCROLL
-.about__box,
-.projects__box,
-.contact__box,
-.skills__box {
-  scrollbar-width: thin; /* Largura fina da scrollbar NO FIREFOX */
-  scrollbar-color: transparent transparent; /* Esconder a scrollbar NO FIREFOX */
-
-  h2 {
-    margin-bottom: 10px;
-  }
-}
-
-.projects__box::-webkit-scrollbar,
-.about__box::-webkit-scrollbar,
-.contact__box::-webkit-scrollbar,
-.skills__box::-webkit-scrollbar {
-  display: none;
-  width: 0.5em;
-}
-
-.projects__box::-webkit-scrollbar-thumb,
-.about__box::-webkit-scrollbar-thumb,
-.contact__box::-webkit-scrollbar-thumb,
-.skills__box::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-
-.projects__box::-webkit-scrollbar-track,
-.about__box::-webkit-scrollbar-track,
-.contact__box::-webkit-scrollbar-track,
-.skills__box::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.projects__box::-webkit-scrollbar-thumb:hover,
-.about__box::-webkit-scrollbar-thumb:hover,
-.contact__box::-webkit-scrollbar-thumb:hover,
-.skills__box::-webkit-scrollbar-thumb:hover {
-  background-color: transparent;
-}
-
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 2em;
+    padding: 0 3em;
   }
 }
