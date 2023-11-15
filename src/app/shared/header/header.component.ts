@@ -8,13 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   logoName = 'Jakki';
   menuShow = false;
+  move = false;
 
   constructor() { }
 
   ngOnInit() { }
 
+  ngAfterViewInit(): void {
+    this.fnMoveLogo();
+  }
+
+  fnMoveLogo(): void {
+    setInterval(() => {
+      this.move = !this.move;
+    }, 10000);
+  }
+
   fnShowMenu(): void {
-    console.log('okokok')
     this.menuShow = !this.menuShow;
   }
 }

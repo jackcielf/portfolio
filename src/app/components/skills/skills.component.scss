@@ -1,42 +1,19 @@
 .skills__box {
-  .skills__container {
+  .my-skills__box {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-top: 2em;
-    gap: 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+  }
+}
 
-    .card__skill {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      span {
-        font-size: 1rem;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 4px var(--blackShadow);
-        font-weight: 600;
-      }
-
-      img {
-        width: 70px;
-        margin: 7px 0;
-        filter: drop-shadow(0 0 5px var(--whiteShadow));
-        padding-bottom: 20px;
-        transition: 0.3s;
-        
-        &:hover {
-          box-shadow: 0 3px 0 #cbf281;
-          filter: drop-shadow(0 0 20px var(--whiteShadow));
-        }
-      }
-
-      p {
-        position: relative;
-        top: -25px;
-        text-transform: capitalize;
-        font-size: 0.8em;
-        font-weight: 300;
-      }
+@media screen and (max-width: 768px) {
+  .skills__box {
+    .my-skills__box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0 !important;
+      row-gap: 0.5em;
     }
   }
 }

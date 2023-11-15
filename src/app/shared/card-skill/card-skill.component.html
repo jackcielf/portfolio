@@ -1,0 +1,10 @@
+<div class="container__card-skill">
+  <div class="row__name-porcent">
+    <h4>{{ data.name }}</h4>
+    <p>{{ data.porcent }}</p>
+  </div>
+
+  <div class="row__bar">
+    <div class="porcent__bar" [ngStyle]="{width: data.porcent}"></div>
+  </div>
+</div>

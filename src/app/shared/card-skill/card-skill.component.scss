@@ -1,0 +1,29 @@
+.container__card-skill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 1em;
+
+  .row__name-porcent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row__bar {
+    width: 100%;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+  }
+
+  .porcent__bar {
+    padding: 5px;
+    background-color: var(--green);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__card-skill {
+    padding: 1em 0;
+  }
+}

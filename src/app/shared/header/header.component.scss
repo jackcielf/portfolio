@@ -22,6 +22,16 @@
     }
   }
 
+  .move {
+    animation: movement .2s 7;
+  }
+  
+  @keyframes movement {
+    0% { transform: rotate3d(0, 0, 1, 10deg) scale(.9) }
+    50% { transform: rotate3d(0, 0, -1, 10deg) scale(.9) }
+    100% { transform: rotate3d(0, 0, 1, 10deg) scale(.9) }
+  }
+
   .menu__toggle {
     display: none;
   }
@@ -71,7 +81,6 @@
   .header {
     height: 15vh;
     padding: 0 2em;
-    backdrop-filter: none;
 
     .logo {
       a {

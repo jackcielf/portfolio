@@ -1,5 +1,5 @@
 <header class="header">
-  <h1 class="logo">
+  <h1 class="logo" [ngClass]="move ? 'move' : ''">
     <a routerLink="/home"> {{ logoName }}<span class="dot">.</span> </a>
   </h1>
   <div class="menu__toggle" (click)="fnShowMenu()"></div>

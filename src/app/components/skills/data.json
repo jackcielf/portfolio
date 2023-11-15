@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "porcent": "90%"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "porcent": "70%"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "porcent": "65%"
+  },
+  {
+    "id": 4,
+    "name": "TypeScript",
+    "porcent": "60%"
+  },
+  {
+    "id": 5,
+    "name": "Angular",
+    "porcent": "45%"
+  },
+  {
+    "id": 6,
+    "name": "React",
+    "porcent": "60%"
+  },
+  {
+    "id": 7,
+    "name": "NodeJS",
+    "porcent": "30%"
+  },
+  {
+    "id": 8,
+    "name": "JAVA",
+    "porcent": "30%"
+  },
+  {
+    "id": 9,
+    "name": "PHP",
+    "porcent": "50%"
+  },
+  {
+    "id": 10,
+    "name": "Python",
+    "porcent": "25%"
+  },
+  {
+    "id": 11,
+    "name": "MySQL",
+    "porcent": "60%"
+  },
+  {
+    "id": 12,
+    "name": "MongoDB",
+    "porcent": "50%"
+  },
+  {
+    "id": 13,
+    "name": "GIT",
+    "porcent": "85%"
+  },
+  {
+    "id": 14,
+    "name": "BootStrap",
+    "porcent": "90%"
+  },
+  {
+    "id": 15,
+    "name": "Figma",
+    "porcent": "70%"
+  }
+]
